@@ -1,0 +1,74 @@
+#top_logo {
+	height: 230px;
+	width: 300px;
+	float:left;
+	margin-left: 130px;
+	padding-right: 200px;
+	filter: brightness(80%);
+
+/*	margin-top: 110px;
+*/}
+h1 {
+	font-family: 'Palatino';
+	font-size: 42px;
+	font-style: normal;
+	font-variant: normal;
+	color: #552700;
+	font-weight: 700;
+	line-height: 46.2px;
+	text-align: center;
+    text-justify: inter-word;
+    margin-right: 350px;
+	}
+
+
+html,body{
+    margin: 0;
+    height: 100%;
+}
+body {
+    height: 100%; 
+    background-image: url("/static/images/jungle_background_2.jpg");
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.main_buttons {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.main_buttons .log {
+    width: 100%;
+    height: auto;
+}
+
+.main_buttons .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.main_buttons .btn:hover {
+    background-color: green;
+}
+
+.wrapper {
+float:right;
+margin-top: 20px;
+margin-right: 400px;
+}

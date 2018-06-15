@@ -1,0 +1,67 @@
+.library_menu{
+	float:left;
+}
+
+
+.library_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #555;
+/*    background-color: #f1f1f1;
+*/    display: inline-block;
+}
+
+.library_menu li input{
+	height: 100px;
+	width: 300px;
+	display: block;
+    color: #73C213;
+    padding: 8px 16px;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+.library_menu li last-child {
+    border-bottom: none;
+}
+/* Change the link color on hover */
+.library_menu li input:hover {
+    background-color: #6A3D00;
+/*    opacity: 0.3;
+*//*    color: white;
+*/}
+
+.library_menu .menu_logo {
+	height: 150px;
+	width: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	background: white;
+/*	border: 1px solid #555;
+*/}
+/*.library_menu .menu_logo:hover {
+	opacity: .3;
+	}*/
+.library_display {
+padding: 50px;
+width: 50%;
+height: 456px;
+float: right;
+vertical-align: 50%;
+}
+
+body, html{ 
+    /* The image used */
+/*    background-image: url("/static/images/jungle_background.jpg");
+*/
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

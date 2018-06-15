@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Book Reader</title>
+	<link rel="icon" href="static/images/icon.ico">
+</head>
+<body>
+<h1>{{book_name}}</h1>
+
+<img class= 'cover' src="/static/books/{{book_name}}/1.jpg" alt="">
+<style>
+	.cover {
+		height: 550px;
+	}
+	.Audios {
+		float: right;
+		padding-right: 500px;
+	}
+</style>
+
+<div class="Audios">
+<div class='Book_Audio'>
+Book Audio<br>
+	<audio controls class="inner">
+		<source src="/static/audio/{{book_name}}.ogg" type="audio/ogg">
+		<source src="/static/audio/{{book_name}}.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<p>
+</div>
+<div class='inner' class="Uploaded_Audio">
+Uploaded Audio<br>
+<input type="file" accept="audio/*" capture id="recorder">
+<div>
+<audio class= 'inner' id="player" controls></audio>
+<p>
+<form action="/static/uploads/upload.php" method="POST" enctype="multipart/form-data">
+    Select Audio to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Audio" name="submit">
+</form>
+
+</p>
+</div>
+</div>
+</div>
+
+<script>
+  var recorder = document.getElementById('recorder');
+  var player = document.getElementById('player');
+
+  recorder.addEventListener('change', function(e) {
+    var file = e.target.files[0];
+    // Do something with the audio file.
+    player.src =  URL.createObjectURL(file);
+  });
+</script>
+</p>
+</body>
+</html>

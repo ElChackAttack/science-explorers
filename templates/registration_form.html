@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registration Form</title>
+</head>
+<body>
+	
+	<p>
+	{% if error != None %}
+	{{error}}
+	{% endif %}
+	</p>
+	
+	Registration Form<p>
+	<form action="/registration_method" target="_blank" method="POST">
+		Username: <input type="text" name="username" required>
+		Password: <input type="password" name="password" required>
+		<input type="submit" value="Register">
+	</form>
+	
+
+
+
+
+<!-- Return home button -->
+	<form action="/">
+		<input type="submit" value="Home" ="" >
+	</form>
+
+</body>
+</html>
+
+<!--
+<body>
+	<h1>Registration Form</h1>
+	<p>Please enter the following information.</p>
+
+<form action="/customer_registration_method" target="_self" method="POST">
+	Email:<br>
+	<input type="email" name = "email" required/> </br>
+	Password:<br>
+	<input type="password" name = "password" required/></br>
+	Name:<br>
+	<input type="text" name = "name" required/> </br>
+	Building Number:<br>
+	<input type="text" name = "building_number" required/> </br>
+	Street:<br>
+	<input type="text" name = "street" required/> </br>
+	City:<br>
+	<input type="text" name = "city" required/> </br>
+	State:<br>
+	<input type="text" name = "state" pattern="[A-Za-z]{2}" title="2 Letter Abbrevation"/> </br>
+	Phone Number:<br>
+	<input type="number" name = "phone_number" min ="1000000" max = "99999999999" required/> </br>
+	Passport Number:<br>
+	<input type="number" name = "passport_number" max = "999999999999999" required/> </br>
+	Passport Expiration Date</br>
+	<input type="date" name = "passport_expiration" required/> </br>
+	Passport Country:<br>
+	<input type="text" name = "passport_country" pattern="[A-Za-z]{3}" title="3 Letter Abbrevation" required/> </br>
+	Date of Birth</br>
+	<input type="date" name = "date_of_birth" required/> </br>
+
+	<br>
+	<input type="submit" value = Register />
+	{% if error %}
+		<p class="error"><strong>Error:</strong> {{error}}</p>
+	{% endif %}
+</form>
+
+</body>
+
+<br>
+<form action="/">
+    <input type="submit" value="Go Back" />
+</form>
+
+-->
+
+</html>

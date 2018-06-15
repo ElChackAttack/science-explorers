@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>User Homepage</title>
+	<link rel="icon" href="static/images/icon.ico">
+</head>
+
+<body>
+
+	{% if login_successful %}
+	<script>
+		var pop = 'Successful Login';
+		alert(pop);
+	</script>
+	{% endif %}
+
+
+	<h1>Welcome {{username}}</h1>
+
+	<h2>
+		<form action="/library">
+			<button>Library</button>
+		</form>
+	</h2>
+
+	<h2>
+		<form action="/add_book">
+			<button>Add Book</button>
+		</form>
+	</h2>
+	
+	<h2>
+		<form action="/logout">
+			<button>
+				Logout
+			</button>
+		</form>
+	</h2>
+</body>
+</html>

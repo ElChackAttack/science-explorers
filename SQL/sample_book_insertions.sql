@@ -1,0 +1,5 @@
+INSERT INTO books VALUES('Goodnight Moon',9780064430173,0000000);
+INSERT INTO books VALUES('How Do Dinosaurs Go to School?',9780545104555,0000001);
+INSERT INTO books VALUES('How Do Dinosaurs Eat Their Food?',9780545109901,0000002);
+INSERT INTO books VALUES('How Do Dinosaurs Get Well Soon?',9780439241014,0000003);
+INSERT INTO books VALUES('How Do Dinosaurs Say Goodnight?',9780439539500,0000004);
